@@ -1,22 +1,34 @@
-# Pseudo code de mon programme de nombre premiers
+# Pseudo code de mon programme de nombres premiers
 
-1) Variables du programme :
+
+2) Variables du programme :
     - Nombre limite minimum (limiteMin)
     - Nombre limite maximum (limiteMax)
-    - Nombre de départ de la limite entrée par l'utilisateur (nbUtilisateurLimite)
-
+    - Caractère pour recommencer (recommencer)
+    - Nombre limite entré par l'utilisateur (nbUtilisateurLimite)
+    - Réponse de l'utilisateur pour recommencer (recommencerUtilisateur)
+    - Compteur de nombres affichés, pour la mise en page des nombres premiers (compteurAffichage)
+    - Indicateur booléen de nombre premier (premier)
 
 3) Déroulement du programme
+- 3.0) DÉBUT de la boucle principale
+    - Initialiser compteurAffichage à 0
+
 - 3.1) INPUT Nombre limite de départ
-    - Nombre compris entre 2 et 1000 ?
+    - Nombre compris entre limiteMin et limiteMax ?
         - Si non, -> 3.1
         - Si oui, -> 3.2
-- 3.2) BOUCLE du nombre de départ au nombre d'arrivé
-    - Si le nombre est premier, PRINT dans la liste des nombres premier
-- 3.3) INPUT pour recommencez le programme
-    - Réponse utilisateur est O ou N ?
-        - Si le caractère est autre que O ou N -> 3.3
-    - Caractère = O ?
-        - OUTPUT Fin du programme 
-   - Caractère = N 
-        - Recommence le programme -> 3.1)
+- 3.2) OUTPUT "Voici la liste des nombres premiers :"
+  BOUCLE du nombre de départ (2) au nombre entré par l'utilisateur
+    - Si le nombre est premier, PRINT dans la liste des nombres premiers
+        - Incrémenter compteurAffichage
+        - Si compteurAffichage est un multiple de 5
+            - Retour à la ligne
+
+- 3.3) INPUT pour recommencer le programme
+    - OUTPUT "Voulez-vous recommencer ? [O/N]"
+    - Réponse utilisateur = 'O' ?
+        - Si oui, -> 3.0 (recommence le programme) 
+        - Si non -> 3.4
+
+- 3.4) OUTPUT "Fin du programme"
