@@ -20,6 +20,7 @@ int main() {
     const int limiteMin = 2;
     const int limiteMax = 1000;
     const char recommencer = 'O';
+    const int nbCol = 5;
     char recommencerUtilisateur;
     int nbUtilisateurLimite;
    do{
@@ -49,7 +50,7 @@ int main() {
                 std::cout<<"    "<<i;
             }
             ++compteurAffichage;
-            if ((compteurAffichage % 5) == 0 ) {
+            if ((compteurAffichage % nbCol) == 0 ) {
                 std::cout << std::endl;
             }
         }

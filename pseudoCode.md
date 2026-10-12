@@ -5,6 +5,7 @@
     - Nombre limite minimum (limiteMin)
     - Nombre limite maximum (limiteMax)
     - Caractère pour recommencer (recommencer)
+    - Nombre de nombres premiers affichés par colonne (nbCol)
     - Nombre limite entré par l'utilisateur (nbUtilisateurLimite)
     - Réponse de l'utilisateur pour recommencer (recommencerUtilisateur)
     - Compteur de nombres affichés, pour la mise en page des nombres premiers (compteurAffichage)
